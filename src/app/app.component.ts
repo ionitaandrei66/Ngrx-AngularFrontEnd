@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {Store} from "@ngrx/store";
+import {loadAuth} from "./ngrx/ngrx.actions";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ngrxTest';
+
+  constructor(private store: Store) {
+    this.store.dispatch(loadAuth());
+  }
+
 }

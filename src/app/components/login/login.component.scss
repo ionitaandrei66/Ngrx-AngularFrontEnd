@@ -1,0 +1,17 @@
+.logInBody{
+  width: 50%;
+  height: 50%;
+  display: flex;
+  left: 25%;
+  top: 20%;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  padding: 0 10vh 0 10vh;
+  justify-content: space-around;
+  .title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
